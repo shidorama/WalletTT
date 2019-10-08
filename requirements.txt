@@ -1,0 +1,8 @@
+flask
+Flask-PyMongo
+Flask-MongoAlchemy
+flask_jsonschema_validator
+PyMongo
+mongoengine
+flask-mongoengine
+-e git+https://github.com/shidorama/test_helpers.git#egg=unittest_helpers

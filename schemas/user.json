@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Signup Request",
+  "signup": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "pattern": "[\\w ]+"
+      },
+      "currency": {
+        "type": "string",
+        "enum": [
+          "EUR",
+          "USD",
+          "CNY",
+          "CAD"
+        ]
+      },
+      "password": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 20
+      },
+      "country": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "currency",
+      "password",
+      "country",
+      "city"
+    ]
+  },
+  "signin": {
+    "type": "object",
+    "properties": {
+      "wallet_id": {
+        "type": "number"
+      },
+      "password": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "password",
+      "wallet_id"
+    ]
+  }
+}

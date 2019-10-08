@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Wallet Requests",
+  "topup": {
+    "type": "object",
+    "properties": {
+      "amount": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "amount"
+    ]
+  },
+  "transfer": {
+    "type": "object",
+    "properties": {
+      "amount": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "amount"
+    ]
+  }
+}
