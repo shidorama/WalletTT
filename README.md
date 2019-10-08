@@ -9,6 +9,12 @@ Unfortunately, time available prohibited me from writing tests or working with e
 * DB: Mongo - lgihtweight, easy to use with high load/big data. Individual document updates are atomic
 * Framework: Flask: lightweight with fast debugging and building, good out of the box rest support, easy to extend
 
+# Data entities
+All the models are contained in the `models/` folder
+Currently used ones are: 
+* wallet - entity containing info about user, his wallet (balance, etc)
+* operations log entry - topup and transfer operations are stored there
+
 # Extras
 * Most of the requests are checked using JSONSchema to validate data that we're getting from users
 
